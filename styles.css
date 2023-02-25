@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.LoginHeader{
+    border-bottom:2px solid #ff163d;
+    padding: 20px;
+}
+svg{
+    position: absolute;
+    left: 50%;
+    top: 2%;
+    transform: translate(-50%);
+}
+.form-section{
+    /* background-color: rgb(52, 52, 52); */
+    background-image: url(rose-petals.svg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.form-div{
+    width: 50%;
+    margin: 20px auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.267);
+    padding: 30px;
+    border-radius: 20px;
+    
+}
+input[type="text"],input[type="email"],input[type="password"]{
+    background-color: rgba(255, 0, 93, 0.382);
+    color: white;
+    border: none;
+    padding: 10px;
+}
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder{
+    color: white;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus{
+    outline:none;
+    background-color:rgba(255, 0, 93, 0.767) ;
+    color: white;
+}
+.submit{
+    color: white;
+    border: none;
+    border-radius: 13px;
+    padding: 10px;
+    background-image: linear-gradient(180deg,#ff163d,#ff6780);
+    transition: background-image,0.4s;
+}
+.submit:hover{
+    background-image: linear-gradient(90deg,#ff6780,#ff163d);
+}
+
+.icon-red{
+    color: #ff163d;
+}
+.hr{
+    position: absolute;
+    color: white;
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 13%;
+}
+.author {
+    color: rgba(255, 0, 93, 0.767);
+    text-align: center;
+    position: absolute;
+    bottom: 12%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 5px;
+}
+.email{
+    position: absolute;
+    border: none;
+    bottom: 5%;
+    width: 200px;
+    left: 50%;
+    transform: translate(-50%);
+    background-image: linear-gradient(90deg,red,blue);
+}
+.email:hover{
+    background-image: linear-gradient(140deg,blue,red);
+}
